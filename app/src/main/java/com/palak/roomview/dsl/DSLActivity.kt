@@ -10,9 +10,9 @@ class DSLActivity : Activity(){
         name = "Palak"
         age = 28
         address = address {
-            street = "as"
+            street = "OPRoad"
             number = 23
-            city = "we2asa"
+            city = "Vadodara"
         }
     }
 
