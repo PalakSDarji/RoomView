@@ -12,7 +12,7 @@ class DSLActivity : Activity(){
         address = address {
             street = "OPRoad"
             number = 23
-            city = "Vadodara"
+            city = "Vadodara City"
         }
     }
 
