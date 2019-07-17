@@ -21,6 +21,6 @@ class DSLActivity : Activity(){
         setContentView(R.layout.activity_dsl)
 
 
-        println("Person is : $person")
+        println("Person is : "+person)
     }
 }
