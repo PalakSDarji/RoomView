@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="androidx.databinding.ObservableList"/>
+        <import type="com.palak.roomview.binding.Sample"/>
+        <variable name="sampleValue" type="Sample"/>
+        <variable name="image" type="android.graphics.drawable.Drawable"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".binding.BindActivity">
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="@{sampleValue.lastName}"
+                  android:id="@+id/textView2"
+                  android:textColor="@color/colorPrimaryDark"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+        <Button
+                android:text="Button"
+
+                android:layout_width="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="86dp"
+                tools:layout_editor_absoluteX="28dp" android:id="@+id/button" tools:ignore="MissingConstraints"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
